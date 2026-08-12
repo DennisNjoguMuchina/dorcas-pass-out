@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5, user-scalable=yes" />
+  <title>Congratulations, Dorcas Wamuyu — Passing Out Parade 🎖️</title>
+  <meta name="description"
+    content="A heartfelt congratulations page for Dorcas Wamuyu on completing her Military Passing Out Parade. With love, always." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎖️</text></svg>" />
+</head>
+
+<body>
+
+  <!-- Scroll Progress Bar -->
+  <div id="scroll-progress-bar" aria-hidden="true"></div>
+
+  <!-- Floating Hearts Background (global) -->
+  <div class="floating-hearts" id="floating-hearts" aria-hidden="true"></div>
+
+  <!-- ── All content cards ── -->
+  <div class="content-wrapper">
+
+    <!-- ═══════════════════════════════════════
+         SECTION 1: HERO
+         ═══════════════════════════════════════ -->
+    <div class="section-card dark" id="hero-card">
+      <p class="hero-eyebrow">Passing Out Parade</p>
+
+      <!-- Medal SVG -->
+      <div class="hero-medal" aria-hidden="true">
+        <svg viewBox="0 0 100 130" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M35 95 L25 130 L40 115 L50 130" fill="#E85C6B" opacity="0.9" />
+          <path d="M65 95 L75 130 L60 115 L50 130" fill="#F4744F" opacity="0.9" />
+          <circle cx="50" cy="55" r="38" stroke="#D9A24C" stroke-width="4" fill="none" />
+          <circle cx="50" cy="55" r="34" stroke="#EFC97D" stroke-width="1.5" fill="rgba(217,162,76,0.08)" />
+          <polygon points="50,18 58,40 82,40 63,54 70,76 50,63 30,76 37,54 18,40 42,40" fill="#D9A24C" stroke="#EFC97D"
+            stroke-width="1" />
+          <path d="M50 48 C50 44, 44 40, 42 44 C40 48, 50 56, 50 56 C50 56, 60 48, 58 44 C56 40, 50 44, 50 48Z"
+            fill="#E85C6B" />
+        </svg>
+      </div>
+
+      <h1 class="hero-headline">Congratulations,<br />Dorcas.</h1>
+
+      <!-- ============================================ -->
+      <!-- WRITE YOUR ROMANTIC OPENING LINE HERE        -->
+      <!-- ============================================ -->
+      <p class="hero-subline">look at you😊 congratulations soldier, too bad i woun't be there to witeness you winning,
+        but here is something :)
+      </p>
+
+      <button class="hero-cta hero-cta-bounce" id="hero-scroll-btn" aria-label="Scroll to begin">
+        Click to begin <span class="arrow">↓</span>
+      </button>
+    </div>
+
+
+    <!-- ═══════════════════════════════════════
+         SECTION 2: SCRATCH TO REVEAL
+         ═══════════════════════════════════════ -->
+    <div class="section-card reveal" id="scratch-section">
+      <h2 class="section-heading">cheki creativity 😊 💕</h2>
+      <p class="section-sub">Scratch apa uone kitu😁…</p>
+
+      <div class="scratch-card-container reveal-scale">
+        <!-- This photo is revealed when scratched — use couple.jpeg -->
+        <img class="scratch-photo" src="couple.jpeg" alt="A cute photo of us together" loading="lazy" />
+
+        <canvas id="scratch-canvas"></canvas>
+
+        <div class="scratch-overlay-label" id="scratch-label">
+          <div class="scratch-btn-overlay">
+            👆 Scratch Here! ✨
+          </div>
+          <span class="scratch-hint-text">Use your finger or mouse to reveal</span>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- ═══════════════════════════════════════
+         SECTION 2B: CLICK TO OPEN — LETTER
+         ═══════════════════════════════════════ -->
+    <div class="section-card reveal">
+      <div class="envelope-card" id="letter-open-btn" role="button" tabindex="0" aria-label="Open love letter">
+        <div class="envelope-body">
+          <div class="envelope-flap"></div>
+          <div class="envelope-line"></div>
+          <div class="envelope-heart">
+            <svg viewBox="0 0 20 20" fill="white">
+              <path fill-rule="evenodd"
+                d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+                clip-rule="evenodd" />
+            </svg>
+          </div>
+          <div class="envelope-dot-1"></div>
+          <div class="envelope-dot-2"></div>
+        </div>
+        <span class="envelope-label">Click to open</span>
+      </div>
+    </div>
+
+    <!-- Letter Modal -->
+    <div class="letter-modal-overlay" id="letter-modal" role="dialog" aria-modal="true" aria-label="Love letter">
+      <div class="letter-modal">
+        <button class="letter-modal-close" id="letter-close-btn" aria-label="Close letter">✕</button>
+        <div class="letter-modal-rule"></div>
+
+        <div class="letter-modal-content" id="letter-content">
+          <div class="letter-modal-text">
+            <!-- ============================================ -->
+            <!-- WRITE YOUR HEARTFELT LETTER TO DORCAS HERE   -->
+            <!-- (this is the full-length love letter that     -->
+            <!-- opens in the modal when she clicks the heart) -->
+            <!-- ============================================ -->
+            <p>My Dearest Dorcas,</p>
+            <br />
+            <p>Hey you😊, look at you manze oficially KDF soldier, who could have thought💯God ni wa maajbu manze you
+              have no idea how proud and happy i am for you🫂. too bad am not there to watch you do those drills, hug
+              you and kiss you ama wataleta noma👀. but either way am sure this is not the last win more will come,
+              lakini my nights were always like sasa leo dorcas anafanya training gani naenda naona those tiktok videos
+              za training naona venye majamaa wanabebeshwa poles za stima wueeh but i knew unge toboa since ukitaka kitu
+              ive never seen you give up so i knew my dorcas will find her way out and you did 💯💯. That spirit endelea
+              nayo thanks to God umefika apo penye umefika but i know this is just the beginning of something beautiful
+              izo ranks you will rise through them ok,.
+              anyways ni hayo kwa saa hii i love you and am super super super proud of you. enjoy this moment you
+              deserve it. </p>
+            <br />
+            <p>Write as many paragraphs as you like. This modal will scroll beautifully if your letter runs long.</p>
+            <br />
+            <p>Forever yours,<br />Dennis Njogu</p>
+            <!-- ============================================ -->
+          </div>
+        </div>
+
+        <div class="letter-scroll-hint" id="letter-scroll-hint">
+          <span class="chevron">▼</span>
+        </div>
+
+        <div class="letter-modal-rule letter-modal-rule-bottom"></div>
+      </div>
+    </div>
+
+
+    <!-- ═══════════════════════════════════════
+         SECTION 3: THIS IS US (Couple Cartoon)
+         ═══════════════════════════════════════ -->
+    <div class="section-card reveal">
+      <div class="medal-icon" aria-hidden="true">
+        <svg viewBox="0 0 100 130" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M35 95 L25 130 L40 115 L50 130" fill="#E85C6B" opacity="0.6" />
+          <path d="M65 95 L75 130 L60 115 L50 130" fill="#F4744F" opacity="0.6" />
+          <circle cx="50" cy="55" r="38" stroke="#D9A24C" stroke-width="3" fill="none" />
+          <polygon points="50,18 58,40 82,40 63,54 70,76 50,63 30,76 37,54 18,40 42,40" fill="#D9A24C" opacity="0.6" />
+          <path d="M50 48 C50 44, 44 40, 42 44 C40 48, 50 56, 50 56 C50 56, 60 48, 58 44 C56 40, 50 44, 50 48Z"
+            fill="#E85C6B" opacity="0.6" />
+        </svg>
+      </div>
+      <h2 class="section-heading">Check This Out! 💑</h2>
+      <p class="section-sub">Hii nimetengeneza usiku wa leo, it's beautiful right??✨</p>
+
+      <div class="cartoon-card-container reveal-scale">
+        <img src="couple-cartoon.jpeg" alt="Animated version of us as a couple" loading="lazy" />
+      </div>
+    </div>
+
+
+    <!-- ═══════════════════════════════════════
+         SECTION 4: FLOWER EXPLOSION
+         ═══════════════════════════════════════ -->
+    <div class="section-card reveal" id="flowers-section" style="position:relative; overflow:visible;">
+      <canvas id="flower-canvas" aria-hidden="true"></canvas>
+
+      <div style="position:relative; z-index:3;">
+        <h2 class="section-heading">UnapendaMaua? 💐</h2>
+        <p class="section-sub">Press the button for a surprise…</p>
+
+        <button class="flower-btn" id="flower-trigger-btn">
+          <!-- Real SVG flowers instead of emojis -->
+          <svg class="flower-icon" viewBox="0 0 50 50" fill="none">
+            <circle cx="25" cy="25" r="6" fill="#FFD700" />
+            <ellipse cx="25" cy="12" rx="6" ry="10" fill="#FF69B4" />
+            <ellipse cx="25" cy="38" rx="6" ry="10" fill="#FF69B4" />
+            <ellipse cx="12" cy="25" rx="10" ry="6" fill="#FF1493" />
+            <ellipse cx="38" cy="25" rx="10" ry="6" fill="#FF1493" />
+            <ellipse cx="15.8" cy="15.8" rx="6" ry="10" fill="#FF6EB4" transform="rotate(45 15.8 15.8)" />
+            <ellipse cx="34.2" cy="34.2" rx="6" ry="10" fill="#FF6EB4" transform="rotate(45 34.2 34.2)" />
+            <ellipse cx="34.2" cy="15.8" rx="6" ry="10" fill="#FF85C1" transform="rotate(-45 34.2 15.8)" />
+            <ellipse cx="15.8" cy="34.2" rx="6" ry="10" fill="#FF85C1" transform="rotate(-45 15.8 34.2)" />
+          </svg>
+          You love flowers my love! Click me
+          <svg class="flower-icon" viewBox="0 0 50 50" fill="none">
+            <circle cx="25" cy="25" r="5" fill="#8B4513" />
+            <ellipse cx="25" cy="13" rx="7" ry="11" fill="#FFD700" />
+            <ellipse cx="25" cy="37" rx="7" ry="11" fill="#FFA500" />
+            <ellipse cx="13" cy="25" rx="11" ry="7" fill="#FFD700" />
+            <ellipse cx="37" cy="25" rx="11" ry="7" fill="#FFA500" />
+            <ellipse cx="16.5" cy="16.5" rx="7" ry="11" fill="#FFBF00" transform="rotate(45 16.5 16.5)" />
+            <ellipse cx="33.5" cy="33.5" rx="7" ry="11" fill="#FFBF00" transform="rotate(45 33.5 33.5)" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+
+    <!-- ═══════════════════════════════════════
+         SECTION 5: THINGS I LOVE ABOUT YOU
+         ═══════════════════════════════════════ -->
+    <div class="section-card reveal" id="love-section">
+      <h2 class="section-heading">Things I Love About You 💛</h2>
+      <p class="section-sub">Here is a small portion of them</p>
+
+      <div class="love-list" id="love-cards-container">
+        <!-- Injected by script.js -->
+      </div>
+    </div>
+
+
+    <!-- ═══════════════════════════════════════
+         SECTION 6: COMPATIBILITY CALCULATOR
+         ═══════════════════════════════════════ -->
+    <div class="section-card reveal" id="compat-section">
+      <h2 class="section-heading">Love Compatibility 💘</h2>
+      <p class="section-sub">How compatible are we? Let's find out…</p>
+
+      <div class="compat-form">
+        <input type="text" class="compat-input" id="compat-name-input" placeholder="Enter your name"
+          autocomplete="off" />
+        <button class="compat-btn" id="compat-calc-btn">Calculate Compatibility</button>
+      </div>
+
+      <div class="compat-result" id="compat-result">
+        <div class="compat-percentage" id="compat-percentage">0%</div>
+        <div class="compat-label" id="compat-label"></div>
+      </div>
+    </div>
+
+
+    <!-- ═══════════════════════════════════════
+         SECTION 7: SONGS CAROUSEL
+         ═══════════════════════════════════════ -->
+    <div class="section-card dark reveal" id="songs-section">
+      <h2 class="section-heading light">Songs That Remind Me of You 🎵</h2>
+      <p class="section-sub light">Every lyric, every melody — it's you.</p>
+
+      <div class="carousel-wrapper">
+        <div class="carousel-track">
+          <div class="carousel-slider" id="carousel-slider">
+            <!-- Injected by script.js -->
+          </div>
+        </div>
+
+        <div class="carousel-controls">
+          <button class="carousel-arrow" id="carousel-prev" aria-label="Previous song">‹</button>
+          <span class="carousel-counter" id="carousel-counter">1 / 1</span>
+          <button class="carousel-arrow" id="carousel-next" aria-label="Next song">›</button>
+        </div>
+        <p class="carousel-swipe-hint">Swipe to navigate</p>
+      </div>
+    </div>
+
+
+    <!-- ═══════════════════════════════════════
+         SECTION 8: TIKTOK VIDEO
+         ═══════════════════════════════════════ -->
+    <div class="section-card reveal" id="tiktok-section">
+      <h2 class="section-heading">The TikTok I Loved the Most 🎬</h2>
+      <p class="section-sub">This one had me watching on repeat…</p>
+
+      <div class="tiktok-video-wrapper reveal-scale">
+        <video id="tiktok-video" playsinline preload="metadata">
+          <source src="dorcas4_video.mp4" type="video/mp4" />
+        </video>
+        <div class="tiktok-play-overlay" id="tiktok-play-overlay">
+          <div class="tiktok-play-btn" aria-hidden="true">▶</div>
+          <span class="tiktok-play-label">TAP TO PLAY</span>
+        </div>
+      </div>
+
+      <!-- ============================================ -->
+      <!-- OPTIONAL: Caption about this video           -->
+      <!-- ============================================ -->
+      <p class="tiktok-caption reveal">"This one right here — you don't know how many times I replayed this 😩💛"</p>
+    </div>
+
+
+    <!-- ═══════════════════════════════════════
+         SECTION 9: PHOTO GALLERY
+         ═══════════════════════════════════════ -->
+    <div class="section-card dark reveal" id="gallery-section">
+      <h2 class="section-heading light">My Favourite Views 📸</h2>
+      <p class="section-sub light">Every angle, every moment — stunning.</p>
+
+      <div class="gallery-grid">
+        <div class="gallery-item reveal-scale reveal-delay-1">
+          <img src="dorcas1.jpeg" alt="Dorcas photo 1" loading="lazy" />
+        </div>
+        <div class="gallery-item reveal-scale reveal-delay-2">
+          <img src="dorcas2.jpeg" alt="Dorcas photo 2" loading="lazy" />
+        </div>
+        <div class="gallery-item reveal-scale reveal-delay-3">
+          <img src="dorcas3.jpeg" alt="Dorcas photo 3" loading="lazy" />
+        </div>
+      </div>
+    </div>
+
+
+    <!-- ═══════════════════════════════════════
+         SECTION 10: FOOTER
+         ═══════════════════════════════════════ -->
+    <footer class="section-card dark" id="footer-card">
+      <div class="medal-icon reveal" aria-hidden="true">
+        <svg viewBox="0 0 100 130" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M35 95 L25 130 L40 115 L50 130" fill="#E85C6B" opacity="0.7" />
+          <path d="M65 95 L75 130 L60 115 L50 130" fill="#F4744F" opacity="0.7" />
+          <circle cx="50" cy="55" r="38" stroke="#D9A24C" stroke-width="3" fill="none" />
+          <circle cx="50" cy="55" r="34" stroke="#EFC97D" stroke-width="1" fill="rgba(217,162,76,0.05)" />
+          <polygon points="50,18 58,40 82,40 63,54 70,76 50,63 30,76 37,54 18,40 42,40" fill="#D9A24C" stroke="#EFC97D"
+            stroke-width="1" />
+          <path d="M50 48 C50 44, 44 40, 42 44 C40 48, 50 56, 50 56 C50 56, 60 48, 58 44 C56 40, 50 44, 50 48Z"
+            fill="#E85C6B" />
+        </svg>
+      </div>
+
+      <h2 class="footer-headline reveal">
+        Congratulations, Dorcas Wamuyu,<br />on your Pass Out. 🎖️
+      </h2>
+
+      <!-- ============================================ -->
+      <!-- OPTIONAL: Add a closing line or date here    -->
+      <!-- ============================================ -->
+      <p class="footer-closing reveal reveal-delay-1">
+        "You did it. I'm so incredibly proud of you."
+      </p>
+
+      <!-- ============================================ -->
+      <!-- REPLACE [YOUR_NAME] with your actual name    -->
+      <!-- ============================================ -->
+      <p class="footer-signature reveal reveal-delay-2">— Dennis Njogu</p>
+
+      <div class="footer-hearts reveal reveal-delay-3" aria-hidden="true">♥ ♥ ♥</div>
+      <p class="footer-year">2026</p>
+    </footer>
+
+  </div><!-- /content-wrapper -->
+
+  <script src="script.js"></script>
+</body>
+
+</html>
