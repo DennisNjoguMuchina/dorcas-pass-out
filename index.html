@@ -5,4 +5,153 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#2b2b2b" />
   <title>For Dorcas — Passing Out Parade</title>
-  <meta name="description" content="A private digital keepsake celebrating Dorcas, her journey, her strength, and her passing out
+  <meta name="description" content="A private digital keepsake celebrating Dorcas, her journey, her strength, and her passing out." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=Allura&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="art-background" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="vignette" aria-hidden="true"></div>
+  <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+
+  <header class="site-nav" id="site-nav">
+    <a class="brand" href="#top">DORCAS <span>PASS OUT</span></a>
+    <nav>
+      <a href="#journey">Journey</a>
+      <a href="#honor">Honor</a>
+      <a href="#memories">Memories</a>
+      <a href="#letter">Letter</a>
+      <a href="#music">Music</a>
+    </nav>
+    <button class="music-toggle" id="music-toggle" type="button" aria-label="Toggle music">♪</button>
+  </header>
+
+  <main id="top">
+    <section class="hero editorial-section">
+      <div class="hero-inner reveal">
+        <div class="eyebrow"><span class="star">✦</span> PASSING OUT PARADE <span class="star">✦</span></div>
+        <h1>For the woman<br /><em>who wears honor</em><br />so beautifully.</h1>
+        <p class="hero-note">A little corner of the internet made for one unforgettable milestone.</p>
+        <a class="scroll-cue" href="#journey"><span>Begin the story</span><b>↓</b></a>
+      </div>
+    </section>
+
+    <section class="quote-spread editorial-section" id="journey">
+      <div class="chapter-mark">01 / THE JOURNEY</div>
+      <div class="quote-layout">
+        <div class="quote-copy reveal">
+          <p class="script-note">For you.</p>
+          <blockquote>“Some journeys ask for strength. Yours asked for everything.”</blockquote>
+          <p>From the first days of training to the moment you finally crossed that finish line, every step became part of a story worth remembering.</p>
+        </div>
+        <figure class="portrait reveal"><img src="dorcas1.jpeg" alt="Dorcas" loading="lazy" /></figure>
+      </div>
+    </section>
+
+    <section class="memory-spread full-image editorial-section">
+      <div class="image-caption reveal"><span>THE WOMAN BEHIND THE UNIFORM</span><strong>Still becoming.</strong></div>
+      <img src="dorcas2.jpeg" alt="Dorcas — a moment from her journey" loading="lazy" />
+    </section>
+
+    <section class="passout editorial-section">
+      <div class="chapter-mark">02 / THE MOMENT</div>
+      <div class="passout-grid">
+        <div class="passout-photo reveal"><img src="dorcas3.jpeg" alt="Dorcas celebrating her passing out" loading="lazy" /></div>
+        <div class="passout-copy reveal">
+          <div class="medal-mini">✦</div>
+          <p class="eyebrow">TODAY, WE CELEBRATE</p>
+          <h2>You did it,<br /><em>soldier.</em></h2>
+          <p>Officially a KDF soldier. A moment earned through discipline, sacrifice, resilience and the refusal to give up.</p>
+          <p class="small-note">And I hope you know how incredibly proud I am of you.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="honor editorial-section" id="honor">
+      <div class="chapter-mark light">03 / HONOR & ACHIEVEMENT</div>
+      <div class="honor-content reveal">
+        <div class="medal-emblem" aria-hidden="true">
+          <div class="ribbon"><i></i><i></i><i></i></div>
+          <div class="medal">✦</div>
+          <div class="laurel">❧ &nbsp;&nbsp;&nbsp;&nbsp; ❧</div>
+        </div>
+        <p class="eyebrow">HONOR · COURAGE · COMMITMENT</p>
+        <h2>More than a<br /><em>pass out.</em></h2>
+        <p>Today marks the beginning of another chapter. May every rank you rise through remind you of the strength that brought you here.</p>
+      </div>
+    </section>
+
+    <section class="cartoon-spread editorial-section">
+      <div class="cartoon-overlay reveal">
+        <p class="script-note">And somewhere in all of this...</p>
+        <h2>there's still <em>us.</em></h2>
+      </div>
+      <img src="couple-cartoon.jpeg" alt="Illustrated portrait of us together" loading="lazy" />
+    </section>
+
+    <section class="love-spread editorial-section" id="memories">
+      <div class="chapter-mark">04 / THE LITTLE THINGS</div>
+      <div class="love-header reveal">
+        <p class="script-note">A few of many.</p>
+        <h2>Things I<br /><em>love about you.</em></h2>
+      </div>
+      <div class="love-list" id="love-list"></div>
+    </section>
+
+    <section class="flower-spread editorial-section" id="flowers">
+      <div id="petal-field" aria-hidden="true"></div>
+      <div class="flower-content reveal">
+        <p class="script-note">A quiet surprise.</p>
+        <h2>For the girl<br />who loves <em>flowers.</em></h2>
+        <p>No button. No warning. Just a little beauty arriving when you least expect it.</p>
+        <span class="botanical-mark">❧</span>
+      </div>
+    </section>
+
+    <section class="letter-spread editorial-section" id="letter">
+      <div class="chapter-mark">05 / A LETTER</div>
+      <div class="letter-paper reveal">
+        <div class="letter-top"><span>PRIVATE · FOR DORCAS</span><span>2026</span></div>
+        <p class="script-note">My dearest Dorcas,</p>
+        <div class="letter-body">
+          <p>Hey you 😊, look at you manze officially KDF soldier. Who could have thought? God ni wa maajabu manze. You have no idea how proud and happy I am for you.</p>
+          <p>Too bad am not there to watch you do those drills, hug you and kiss you ama wataleta noma 👀. But either way, I'm sure this is not the last win. More will come.</p>
+          <p>My nights were always like, sasa leo Dorcas anafanya training gani? Naenda naona those TikTok videos za training, naona venye majamaa wanabebeshwa poles za stima wueeh. But I knew unge toboa. Since ukitaka kitu I've never seen you give up, so I knew my Dorcas would find her way out — and you did. 💯</p>
+          <p>That spirit endelea nayo. Thanks to God umefika apo penye umefika, but I know this is just the beginning of something beautiful. Izo ranks you will rise through them, okay?</p>
+          <p>Anyways ni hayo kwa saa hii. I love you and am super, super, super proud of you. Enjoy this moment. You deserve it.</p>
+        </div>
+        <p class="signature">Forever yours,<br /><strong>Dennis Njogu</strong></p>
+      </div>
+    </section>
+
+    <section class="music-spread editorial-section" id="music">
+      <div class="chapter-mark light">06 / SONGS THAT REMIND ME OF YOU</div>
+      <div class="record reveal">
+        <div class="record-disc"><div class="record-label">D<br /><small>♥</small></div></div>
+        <div class="track-info">
+          <p class="eyebrow">A PRIVATE PLAYLIST</p>
+          <h2>Songs that<br /><em>sound like us.</em></h2>
+          <div id="song-list"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-spread editorial-section">
+      <div class="final-inner reveal">
+        <p class="script-note">One last thing.</p>
+        <h2>I'm<br /><em>proud of you.</em></h2>
+        <p>More than this page could ever say.</p>
+        <div class="final-medal">✦</div>
+        <p class="closing">Congratulations, Dorcas Wamuyu.<br />May this only be the beginning.</p>
+        <span class="signature-final">— Dennis</span>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">MADE WITH LOVE · 2026 · DORCAS PASS OUT</footer>
+  <script src="script.js"></script>
+</body>
+</html>
