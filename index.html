@@ -23,17 +23,18 @@
       <a href="#journey">Journey</a>
       <a href="#honor">Honor</a>
       <a href="#memories">Memories</a>
+      <a href="#tiktok">Memory</a>
       <a href="#letter">Letter</a>
       <a href="#music">Music</a>
     </nav>
-    <button class="music-toggle" id="music-toggle" type="button" aria-label="Toggle music">♪</button>
+    <button class="music-toggle" id="music-toggle" type="button" aria-label="Jump to music">♪</button>
   </header>
 
   <main id="top">
     <section class="hero editorial-section">
       <div class="hero-inner reveal">
         <div class="eyebrow"><span class="star">✦</span> PASSING OUT PARADE <span class="star">✦</span></div>
-        <h1>For the woman<br /><em>who wears honor</em><br />so beautifully.</h1>
+        <h1>Congratulations on your<br /><em>pass out,</em><br />my lovely Dorcas.</h1>
         <p class="hero-note">A little corner of the internet made for one unforgettable milestone.</p>
         <a class="scroll-cue" href="#journey"><span>Begin the story</span><b>↓</b></a>
       </div>
@@ -49,11 +50,6 @@
         </div>
         <figure class="portrait reveal"><img src="dorcas1.jpeg" alt="Dorcas" loading="lazy" /></figure>
       </div>
-    </section>
-
-    <section class="memory-spread full-image editorial-section">
-      <div class="image-caption reveal"><span>THE WOMAN BEHIND THE UNIFORM</span><strong>Still becoming.</strong></div>
-      <img src="dorcas2.jpeg" alt="Dorcas — a moment from her journey" loading="lazy" />
     </section>
 
     <section class="passout editorial-section">
@@ -101,6 +97,26 @@
       <div class="love-list" id="love-list"></div>
     </section>
 
+    <section class="tiktok-spread editorial-section" id="tiktok">
+      <div class="chapter-mark">05 / THE ONE I KEPT REPLAYING</div>
+      <div class="tiktok-intro reveal">
+        <p class="script-note">You probably don't know this...</p>
+        <h2>The TikTok<br /><em>I loved the most.</em></h2>
+        <p>This one had me watching on repeat. A little reminder of you, the training, and the journey you were taking while I was somewhere else thinking about you.</p>
+      </div>
+      <div class="tiktok-video-wrapper reveal-scale">
+        <video id="tiktok-video" playsinline preload="metadata" controls poster="couple-cartoon.jpeg">
+          <source src="dorcas4_video.mp4" type="video/mp4" />
+          Your browser does not support the video element.
+        </video>
+        <button class="tiktok-play-overlay" id="tiktok-play-overlay" type="button" aria-label="Play the TikTok memory">
+          <span class="tiktok-play-btn">▶</span>
+          <span class="tiktok-play-label">PLAY THE MEMORY</span>
+        </button>
+      </div>
+      <p class="tiktok-caption reveal">“This one right here — you don't know how many times I replayed this 😩💛”</p>
+    </section>
+
     <section class="flower-spread editorial-section" id="flowers">
       <div id="petal-field" aria-hidden="true"></div>
       <div class="flower-content reveal">
@@ -112,7 +128,7 @@
     </section>
 
     <section class="letter-spread editorial-section" id="letter">
-      <div class="chapter-mark">05 / A LETTER</div>
+      <div class="chapter-mark">06 / A LETTER</div>
       <div class="letter-paper reveal">
         <div class="letter-top"><span>PRIVATE · FOR DORCAS</span><span>2026</span></div>
         <p class="script-note">My dearest Dorcas,</p>
@@ -128,12 +144,13 @@
     </section>
 
     <section class="music-spread editorial-section" id="music">
-      <div class="chapter-mark light">06 / SONGS THAT REMIND ME OF YOU</div>
+      <div class="chapter-mark light">07 / SONGS THAT REMIND ME OF YOU</div>
       <div class="record reveal">
         <div class="record-disc"><div class="record-label">D<br /><small>♥</small></div></div>
         <div class="track-info">
           <p class="eyebrow">A PRIVATE PLAYLIST</p>
           <h2>Songs that<br /><em>sound like us.</em></h2>
+          <p class="music-helper">Tap any cover to open the song on YouTube.</p>
           <div id="song-list"></div>
         </div>
       </div>
