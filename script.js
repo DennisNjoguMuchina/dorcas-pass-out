@@ -79,8 +79,7 @@ function initPetals(){
 }
 
 function initAmbientPetals(){
-  const targets=['letter','honor','memories'];
-  targets.forEach(id=>{
+  ['letter','honor','memories'].forEach(id=>{
     const el=document.getElementById(id); if(!el)return;
     const io=new IntersectionObserver(entries=>entries.forEach(entry=>{
       if(entry.isIntersecting&&Math.random()>.35){
@@ -96,10 +95,8 @@ function initMusic(){
   const button=document.getElementById('music-toggle');
   if(!button)return;
   button.addEventListener('click',()=>{
-    button.classList.toggle('playing');
-    button.textContent=button.classList.contains('playing')?'♫':'♪';
+    document.getElementById('music')?.scrollIntoView({behavior:reduceMotion?'auto':'smooth'});
   });
-  // The site has no autoplay audio asset; this control is intentionally visual and non-intrusive.
 }
 
 function init(){
